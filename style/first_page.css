@@ -74,7 +74,7 @@ table input[type="radio"]:checked+label{
     border-radius: 20px;
     animation-name: beat2;
     animation-duration: 0.2s;
-    animation-iteration-count:infinite;
+    animation-iteration-count:5;
 }
 
 
@@ -84,7 +84,7 @@ table input[type="radio"]:checked+label{
         /* transform: scale(1); */
     }
     50% {
-        transform:rotate(-20deg) scale(1.4);
+        transform:rotate(-20deg) scale(1.2);
         /* transform: scale(1.1); */
     }
     100% {
