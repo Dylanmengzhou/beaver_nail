@@ -50,7 +50,7 @@ content.appendChild(table);
 
 var today = new Date();
 var month = today.getMonth() + 1;
-
+var year = today.getFullYear();
 
 
 //write the title p   
@@ -78,9 +78,22 @@ function writeToTag(position, day) {
     }
     else{
         var text = document.createTextNode(day);
-        var button = document.createElement("button");
-        button.appendChild(text);
-        tag.appendChild(button);
+        var input = document.createElement("input");
+        input.type = "radio";
+        var name = year+"-"+month+"-"+day;
+        input.id = "input-"+name;
+        
+        input.onclick = click_change(day,month,year);
+        input.name = "day";
+        
+        input.onclick = click_change();
+        var label = document.createElement("label");
+        label.htmlFor = "input-"+year+"-"+month+"-"+day;
+        label.id = "label-"+name;
+        label.appendChild(text);
+        tag.appendChild(input);
+        tag.appendChild(label);
+
     }
     
     var element = document.getElementById(position);
@@ -89,7 +102,16 @@ function writeToTag(position, day) {
 
 
 }
+function click_change(day,month,year){
+    var lable = document.getElementsByName("label-"+year+"-"+month+"-"+day);
 
+    var style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = "#label-"+year+"-"+month+"-"+day+"{color: geen;}";
+
+
+
+}
 
 //get a matrix for a month with position
 function get_month_position(year, month, position) {
@@ -134,3 +156,4 @@ for (var i = 0; i < matrix.length; i++) {
 
     }
 }
+

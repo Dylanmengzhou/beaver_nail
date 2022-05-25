@@ -26,6 +26,7 @@ table {
     
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: all 0.2s;
+    table-layout: fixed;
     
     
     
@@ -35,24 +36,40 @@ table:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-#content-section button {
+input[type="radio"]{
+    visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+table label {
     background-color: transparent;
+    display: inline-block;
     border: none;
     font-size: 25px;
     height: 100%;
     width: 100%;
-    padding: 0;
-    text-align: center;
+
+
     color: white;
+
+    padding-top: 30px;
+    text-align: center;
+
     transition: transform 0.3s;
 }
 
-#content-section button:hover{
+#content-section label:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     transform: scale(1.1);
     background-color: rgb(255, 255, 255, 0.5);
-    border-radius: 10px;
+    border-radius: 20px;
     color:rgba(104, 61, 204, 0.8);
 }
 
 
+table input[type="radio"]:checked+label{
+    color:rgba(104, 61, 204, 0.8);
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
