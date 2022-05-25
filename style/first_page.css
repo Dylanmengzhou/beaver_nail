@@ -17,7 +17,8 @@ table {
     margin: auto;
     margin-top: 80px;
     height: 500px;
-    width: 90%;
+    width: 100%;
+   
     background:url("../img/IMG_3300.PNG");
     background-size:350px;
     background-repeat: no-repeat;
@@ -44,16 +45,17 @@ input[type="radio"]{
 
 table label {
     background-color: transparent;
-    display: inline-block;
+    display: block;
     border: none;
     font-size: 25px;
-    height: 100%;
-    width: 100%;
+    height: 50px;
+
+    width: 120%;
 
 
     color: white;
 
-    padding-top: 30px;
+
     text-align: center;
 
     transition: transform 0.3s;
@@ -80,15 +82,15 @@ table input[type="radio"]:checked+label{
 
 @keyframes beat2 {
     0% {
-        transform:rotate(20deg) scale(1.1);
+        transform:rotate(10deg) scale(1.1);
         /* transform: scale(1); */
     }
     50% {
-        transform:rotate(-20deg) scale(1.2);
+        transform:rotate(-10deg) scale(1.2);
         /* transform: scale(1.1); */
     }
     100% {
-        transform:rotate(20deg) scale(1.1);
+        transform:rotate(10deg) scale(1.1);
         /* transform: scale(1); */
     }
 }
