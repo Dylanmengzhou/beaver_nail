@@ -1,0 +1,104 @@
+
+html {
+    background: linear-gradient(-45deg,rgb(168, 61, 249), #cd9cf2 0%, rgb(187, 153, 242),rgb(131, 92, 240),rgba(179, 102, 221, 0.8),rgb(217, 111, 238));
+
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#main-interface {
+    margin: auto;
+    width: 90%;
+
+    border-radius: 10px;
+
+    background-color: rgba(79, 15, 96,0.2);
+    
+
+}
+
+header {
+    font-family: 'Pacifico', cursive;
+    font-weight: -15px;
+    width: 100%;
+
+    color: rgb(245, 220, 253);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 5vh;
+    word-spacing: 5px;
+    letter-spacing: 6px;
+}
+#chinese{
+    font-family:"Ma Shan Zheng", cursive;
+}
+
+#description {
+    font-family: 'Miniver', cursive;
+    font-size: 3vh;
+
+}
+
+#content-section {
+    font-family: 'Pacifico', cursive;
+    color:#331a46;
+    position: relative;
+    margin-top: 20px;
+    height: 75%;
+    text-align: center;
+
+}
+
+
+#button {
+    height: 15%;
+    background-color: transparent;
+    justify-content: space-between;
+
+
+}
+
+#next {
+    position: relative;
+    top: 50%;
+    left: 75%;
+    margin-bottom: 20px;
+    bottom: 0px;
+    width: 18%;
+    text-decoration: none;
+    color: white;
+    background: #dc3545;
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 19px;
+    transition: transform 0.2s;
+
+}
+
+#next:hover {
+    transform: scale(1.2);
+}
