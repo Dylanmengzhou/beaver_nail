@@ -28,7 +28,7 @@
 
     }
     .box:hover{
-        border: 2px solid rgba(255, 255, 255, 0.8);
+        border: 6px solid rgb(255, 255, 255);
         transform: scale(1.1);
     }
     #time_1{
@@ -49,30 +49,34 @@
         font-size: 18px;
         height: 100%;
         width: 100%;
-        margin-top: -10px;
+        margin-top: -8px;
+        background-color: transparent;
         
         transition: all 0.5s;
     }
 
     
-    input[type="radio"]:checked+label{
+    .box input[type="radio"]:checked+label{
         color: rgb(255, 255, 255, 0.6);
+
         animation-name: beat;
         animation-duration: 0.2s;
         animation-iteration-count: infinite;
 
     }
+
+
     @keyframes beat {
         0% {
-            transform:rotate(0deg) scale(1.2);
+            transform:rotate(10deg) scale(1.1);
             /* transform: scale(1); */
         }
         50% {
-            transform:rotate(-10deg) scale(1.2);
+            transform:rotate(-10deg) scale(1.4);
             /* transform: scale(1.1); */
         }
         100% {
-            transform:rotate(0deg) scale(1.2);
+            transform:rotate(10deg) scale(1.1);
             /* transform: scale(1); */
         }
     }
